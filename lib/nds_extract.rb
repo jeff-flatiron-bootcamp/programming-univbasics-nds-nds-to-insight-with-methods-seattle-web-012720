@@ -11,22 +11,24 @@ def gross_for_director(director_data)
   director = 0
   dd = director_data
   while (dd[director]) do
-    movie = 0
-    while(dd[director][:movies][movie]) do
-      gross = gross + dd[director][:movies][movie][:worldwide_gross]
-      movie+=1
-    end
-    director+=1
+    
+    gross = gross + first_director_hash(dd[director][:movies])
+    #movie = 0
+    #while(dd[director][:movies][movie]) do
+    #  gross = gross + dd[director][:movies][movie][:worldwide_gross]
+    #  movie+=1
+    #end
+    #director+=1
   end
   gross
   
 end
 
-def first_director_hash(movies)
-    movie = 0
-  while(dd[director][:movies][movie]) do
-    gross = gross + dd[director][:movies][movie][:worldwide_gross]
-    movie+=1
+def first_director_hash(array)
+  item = 0
+  total = 0
+  while(array[item]) do
+    total = total + array[item][:worldwide_gross]
   end
 end
 
