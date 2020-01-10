@@ -10,7 +10,7 @@ def gross_for_director(director_data)
   while (director_data[:movies][movie_index]) do
     director_gross = director_gross + director_data[:movies][movie_index][:worldwide_gross]
   end
-  
+  director_gross
 end
 
 def first_director_hash(array)
