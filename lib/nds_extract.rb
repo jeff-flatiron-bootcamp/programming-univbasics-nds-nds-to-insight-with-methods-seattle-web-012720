@@ -6,7 +6,7 @@ require 'pp'
 # using director_data as input
 def gross_for_director(director_data)
   pp director_data
-  =begin
+ 
   gross = 0
   director = 0
   dd = director_data
@@ -19,7 +19,7 @@ def gross_for_director(director_data)
     director+=1
   end
   gross
-  =end
+  
 end
 
 
