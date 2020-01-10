@@ -13,7 +13,7 @@ def gross_for_director(director_data)
   while (dd[director]) do
     movie = 0
     while(dd[director][:movies][movie]) do
-      gross = gross + dd[director][:movies][movie][:worldwide_grosses]
+      gross = gross + dd[director][:movies][movie][:worldwide_gross]
       movie+=1
     end
     director+=1
@@ -22,7 +22,9 @@ def gross_for_director(director_data)
   
 end
 
-
+def first_director_hash(movies)
+  
+end
 
 # Write a method that, given an NDS creates a new Hash
 # The return value should be like:
