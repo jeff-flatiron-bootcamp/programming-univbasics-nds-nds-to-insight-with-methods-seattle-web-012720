@@ -11,7 +11,9 @@ def gross_for_director(director_data)
     movie = 0
     while(dd[director][:movies][movie]) do
       gross = gross + dd[director][:movies][movie][:worldwide_grosses]
+      movie+=1
     end
+    director+=1
   end
   gross
 end
