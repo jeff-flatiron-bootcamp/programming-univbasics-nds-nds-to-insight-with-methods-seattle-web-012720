@@ -11,7 +11,7 @@ def gross_for_director(director_data)
   director = 0
   dd = director_data
   while (dd[director]) do
-    
+    puts dd[director][:name]
     gross = gross + first_director_hash(dd[director][:movies])
     #movie = 0
     #while(dd[director][:movies][movie]) do
