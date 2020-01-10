@@ -30,6 +30,8 @@ def first_director_hash(array)
   while(array[item]) do
     total = total + array[item][:worldwide_gross]
   end
+  puts total
+  total
 end
 
 # Write a method that, given an NDS creates a new Hash
