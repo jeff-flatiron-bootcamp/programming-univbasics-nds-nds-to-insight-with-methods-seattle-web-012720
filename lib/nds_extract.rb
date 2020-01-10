@@ -14,21 +14,16 @@ def gross_for_director(director_data)
   director_gross
 end
 
-def first_director_hash(array)
-  item = 0
-  total = 0
-  while(array[item]) do
-    total = total + array[item][:worldwide_gross]
-  end
-  puts total
-  total
-end
-
 # Write a method that, given an NDS creates a new Hash
 # The return value should be like:
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
   result = {}
+  director_index =0
+  while(nds[director_index]) do
+    result[nds[director_index][:name]] = gross_for_director(nds[director_index])
+    director_index+=1
+  end
   nil
 end
